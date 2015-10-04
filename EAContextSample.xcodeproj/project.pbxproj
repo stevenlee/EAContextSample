@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16D790891BBF984D00C7EB76 /* TRUMPET.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 16D790881BBF984D00C7EB76 /* TRUMPET.mp3 */; };
+		16D7908A1BC0AE9800C7EB76 /* TRUMPET.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 16D790881BBF984D00C7EB76 /* TRUMPET.mp3 */; };
 		5F6F00B41844C01B00488283 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6F00B31844C01B00488283 /* Foundation.framework */; };
 		5F6F00B61844C01B00488283 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6F00B51844C01B00488283 /* CoreGraphics.framework */; };
 		5F6F00B81844C01B00488283 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6F00B71844C01B00488283 /* UIKit.framework */; };
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16D790881BBF984D00C7EB76 /* TRUMPET.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = TRUMPET.mp3; path = EAContextSampleTests/TRUMPET.mp3; sourceTree = "<group>"; };
 		5F6F00B01844C01B00488283 /* EAContextSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAContextSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6F00B31844C01B00488283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5F6F00B51844C01B00488283 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,7 @@
 		5F6F00A71844C01B00488283 = {
 			isa = PBXGroup;
 			children = (
+				16D790881BBF984D00C7EB76 /* TRUMPET.mp3 */,
 				5FD7886618E18CFD00118793 /* EAContext */,
 				5F6F00B91844C01B00488283 /* EAContextSample */,
 				5F6F00DB1844C01B00488283 /* EAContextSampleTests */,
@@ -268,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D7908A1BC0AE9800C7EB76 /* TRUMPET.mp3 in Resources */,
 				5F6F00CF1844C01B00488283 /* Images.xcassets in Resources */,
 				5F6F00BE1844C01B00488283 /* InfoPlist.strings in Resources */,
 				5F6F00C71844C01B00488283 /* Main.storyboard in Resources */,
@@ -278,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D790891BBF984D00C7EB76 /* TRUMPET.mp3 in Resources */,
 				5F6F00E01844C01B00488283 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

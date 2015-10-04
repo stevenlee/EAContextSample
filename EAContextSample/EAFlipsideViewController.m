@@ -5,6 +5,7 @@
 //  Created by Ryan on 13/11/26.
 //  Copyright (c) 2013年 Atomax. All rights reserved.
 //
+
 #import <MessageUI/MessageUI.h>
 #import "EAFlipsideViewController.h"
 @interface EAFlipsideViewController () <MFMailComposeViewControllerDelegate>
@@ -93,8 +94,8 @@
     [self.connectionToggleBtn2 setTitle:@"目標已連線" forState:UIControlStateSelected];
     [self setupSliderRanges];
     [self loadDefaults];
-    
 }
+
 
 - (void)didReceiveMemoryWarning
 {

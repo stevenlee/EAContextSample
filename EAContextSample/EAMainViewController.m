@@ -7,6 +7,8 @@
 //
 #import "EAMainViewController.h"
 #import "EAContext.h"
+#import <AudioToolbox/AudioToolbox.h>
+
 
 @interface EAMainViewController () <EAContextDelegate>
 @property (nonatomic, strong) EAContext *context;
@@ -32,11 +34,29 @@ NSTimeInterval tick;
 NSTimeInterval tack;
 NSTimer *triggerTimer;
 NSString *logFileName;
+SystemSoundID trumpetSound;
 
 - (void)logShowSettings
 {
     NSLog(@"(%f,%f,%f,%d)",ta_th_sen,ta_th_hit,triggerInterval,count);
     
+}
+
+- (void)initSound
+{
+    // Add this file to the main bundle at "Copy Bundle Resouces" setting of target
+    NSString *path  = [[NSBundle mainBundle] pathForResource:@"TRUMPET" ofType:@"mp3"];
+    NSURL *pathURL = [NSURL fileURLWithPath : path];
+    
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &trumpetSound);
+    
+    // Play
+//    AudioServicesPlaySystemSound(trumpetSound);
+    
+    // call the following function when the sound is no longer used
+    // (must be done AFTER the sound is done playing)
+    // AudioServicesDisposeSystemSoundID(audioEffect);
+
 }
 
 - (void)initDefaults
@@ -123,6 +143,7 @@ NSString *logFileName;
 //    });
     self.logString = [[NSMutableString alloc] init];
 //    [self initLogString];
+    [self initSound];
 
 }
 
@@ -301,6 +322,7 @@ NSString *logFileName;
         [self.mtLb setText:@""];
         [self.mt2Lb setText:@""];
     });
+    AudioServicesPlaySystemSound(trumpetSound);
     [self startTimer];
 }
 
